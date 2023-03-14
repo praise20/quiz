@@ -5,15 +5,17 @@
 
 body{
     background-color: antiquewhite;
+    font-family: 'Coming Soon', cursive;
 }
 
 .container{
     margin: auto;
     margin-top: 10%;
-    width: 60%;
+    width: 100%;
+    max-width: 250px;
     height: auto;
-    padding: 50px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #FFF;
     color: #000;
     border-radius: 10px;
 }
@@ -27,11 +29,15 @@ button{
     margin: 5px;
     border-radius: 10px;
 }
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
 
-button:hover{
+/* button:hover{
     background-color:antiquewhite;
     color: #000;
-}
+} */
 h4{
     text-align: center;
 }
@@ -47,4 +53,11 @@ h4{
 
 .hide{
     display: none;
+}
+a{
+    text-decoration: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
 }

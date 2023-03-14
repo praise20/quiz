@@ -5,19 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h4>Quiz</h4>
-      <div id="quiz"></div>
-      <!-- <button id="prev">Previous</button>
-      <button id="next">Next</button> -->
-      <button id="submit">Submit Quiz</button>
-      <button id="restart">Restart</button>
+      <div id="quiz">
+        <div id="question"></div>
+        <br />
+        <div class="options">
+          <div>
+            <input type="radio" name="select" class="value_a" />
+            <label id="option1"></label>
+          </div>
+          <div>
+            <input type="radio" name="select" class="value_b" />
+            <label id="option2"></label>
+          </div>
+          <div>
+            <input type="radio" name="select" class="value_c" />
+            <label id="option3"></label>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="submit">Submit</button>
+        <button id="next">Next</button>
+        <button id="end">End</button>
+      </div>
       <div id="results"></div>
+      <div class="buttons">
+        <a href="home.html"><button id="home">Go Home</button></a>
+        <button id="restart">Restart</button>
+      </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="quiz.js"></script>
   </body>
 </html>
