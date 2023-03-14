@@ -162,10 +162,18 @@ endButton.addEventListener('click',function(){
 
 nextButton.addEventListener('click', function(){
     currentQuestion++;
+    let elements = document.getElementsByTagName("input");
+
+    for (let i = 0; i < elements.length; i++) {
+        if (elements[i].type == "radio") {
+            elements[i].checked = false;
+        }
+    }
     // quizContainer.style.color = 'black';
     if(currentQuestion < myQuestions.length){
      startQuiz();
     }
+    
  });
 
 restartButton.addEventListener('click', function(){
